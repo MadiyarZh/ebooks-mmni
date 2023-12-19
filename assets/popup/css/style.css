@@ -1,0 +1,58 @@
+#result{
+    display: none;
+    background: #fff;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.button.b-close, .button.bClose {
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: none;
+    font: bold 131% sans-serif;
+    padding: 0 6px 2px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+}
+
+#result .button {
+    background-color: #2b91af;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#result .button>span {
+    font-size: 84%;
+}
+
+#result .button:hover{
+    background-color: #32c4e8;
+}
+
+.clr{
+    clear: both;
+}
+
+#result-popup{
+    width:  128px;;
+    margin: 16px 0px;
+    background-color: #2b91af;
+    border-radius: 2px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+#result-popup:hover{
+    background-color: #32c4e8;
+}

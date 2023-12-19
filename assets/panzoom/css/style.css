@@ -1,0 +1,105 @@
+#mindcard-popup {
+    width: 128px;
+    margin: 16px 0px;
+    background-color: #2b91af;
+    border-radius: 2px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+#mindcard {
+    display: none;
+    background: #fff;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 16px;
+    padding: 10px 20px;
+    height: 90%;
+
+}
+#mindcard .mindcard-data{
+    height: 80%;
+}
+
+
+.button.b-close, .button.bClose {
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: none;
+    font: bold 131% sans-serif;
+    padding: 0 6px 2px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+}
+
+#mindcard .button {
+    background-color: #2b91af;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#mindcard .button>span {
+    font-size: 84%;
+}
+
+#mindcard .button:hover{
+    background-color: #32c4e8;
+}
+
+#mindcard-popup{
+    width: 320px;
+    margin: 16px auto;
+    background-color: #2b91af;
+    border-radius: 2px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 16px;
+    font-size: 1.2em;
+}
+
+#mindcard-popup:hover{
+    background-color: #32c4e8;
+}
+
+.clr{
+     clear: both;
+ }
+
+.mindcard-data{
+    overflow: hidden;
+    position: relative;
+}
+
+.mindcard-data .panzoom{
+    transform: none;
+    backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    cursor: move;
+}
+
+.mindcard-data .panzoom img.panzoom{
+   width: 100%;
+}
+
+#mindcard .buttons {
+    margin: 16px 0 0;
+}
+
+#mindcard .buttons input[type=range]{
+    width: 133px;
+    display: inline-block;
+    vertical-align: middle;
+}
+

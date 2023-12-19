@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="kk-KZ">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../assets/main/css/reset.css"/>
+    <link rel="stylesheet" href="../../../assets/main/css/style.css">
+    <link rel="stylesheet" href="../../../assets/fa/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../../assets/bt/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../../assets/menu/css/jquery.multilevelpushmenu.css"/>
+    <link rel="stylesheet" href="../../../assets/menu/css/fullexpandcollapse.css"/>
+    <title>Семинары, СРМ, СРМП</title>
+</head>
+
+<body class="main-page disableSelection">
+
+<div class="nav">
+    <div class="container">
+
+        <div class="logo">
+            <img  src="../../../assets/main/img/logo.png"/>
+        </div>
+
+        <div class="menu">
+            <a id="baseexpand" class="" href="#"><i class="fa fa-reorder floatLeft cursorPointer"></i>Темы</a>
+        </div>
+
+        <div class="home">
+            <a href="../../../index.html"><i class="fa fa-home"></i></a>
+        </div>
+
+        <div class="clr"></div>
+
+    </div>
+</div>
+
+<div class="title">
+    <div class="container">
+        <h2>Семинары, СРМ, СРМП</h2>
+    </div>
+</div>
+
+<div class="main">
+    <div class="container">
+
+        <div class="col-lg-9 side-l">
+            <div class="article">
+                <img class="pt-ct" src="img/seminar.jpg"/>
+            </div>
+        </div>
+
+        <div class="col-lg-3 side-r">
+                <ul class="nav">
+
+                    <li>
+                        <a href="index.html"> Тема 1: Научные знания как результат познавательной деятельности</a>
+                    </li>
+                    <li class="active">
+                        <a href="seminar.html"> Семинары, СРМ, СРМП </a>
+                    </li>
+                    <!-- <li>
+                        <a href="test.html"> Тест  </a>
+                    </li> -->
+                    <li>
+                        <a href="glossary.html"> Глоссарий </a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <p class="footer-title">
+            &copy; КазНПУ им. Абая 2023
+        </p>
+    </div>
+</div>
+
+
+<div id="menu">
+    <nav>
+        <ul>
+            <li>
+                <div class="logo-ico">
+                </div>
+            </li>
+            <li>
+                <a href="index.html" data-page="1" class="menu-item"> Тема 1. Научные знания как результат познавательной деятельности </a>
+            </li>
+            <li>
+                <a href="../t2/index.html" data-page="2" class="menu-item"> Тема 2. Педагогика в системе наук </a>
+            </li>
+            <li>
+                <a href="../t3/index.html" data-page="3" class="menu-item"> Тема 3. Методологические принципы </a>
+            </li>
+            <li>
+                <a href="../t4/index.html" data-page="4" class="menu-item"> Тема 4. Методологические подходы педагогических исследований </a>
+            </li>
+            <li>
+                <a href="../t5/index.html" data-page="5" class="menu-item"> Тема 5. Этапы и уровни  исследования </a>
+            </li>
+            <li>
+                <a href="../t6/index.html" data-page="6" class="menu-item"> Тема 6. Научный аппарат исследования </a>
+            </li>
+            <li>
+                <a href="../t7/index.html" data-page="7" class="menu-item"> Тема 7. Элементы исследования </a>
+            </li>
+            <li>
+                <a href="../t8/index.html" data-page="8" class="menu-item"> Тема 8. Методы исследований </a>
+            </li>
+            <li>
+                <a href="../t9/index.html" data-page="9" class="menu-item"> Тема 9. Педагогический эксперимент </a>
+            </li>
+            <li>
+                <a href="../t10/index.html" data-page="10" class="menu-item"> Тема 10. Педагогический эксперимент </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<script src="../../../assets/jq/jquery-2.1.4.min.js"></script>
+<script src="../../../assets/menu/js/jquery.multilevelpushmenu.js"></script>
+<script src="../../../assets/bt/js/bootstrap.min.js"></script>
+<script src="../../../assets/main/js/main.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // HTML markup implementation, overlap mode
+        $('#menu').multilevelpushmenu({
+            containersToPush: [$('#pushobj')],
+            fullCollapse: true,
+            collapsed: true,
+            direction: 'rtl',
+            preventItemClick: false,
+            menuWidth: 320,
+            onExpandMenuStart: function () {
+                $('#menu').css({visibility: 'visible'});
+            }
+        });
+    });
+
+    // Base expand
+    $('#baseexpand').click(function () {
+
+        if ($('#menu').multilevelpushmenu('option', 'fullCollapse')) {
+            $('#menu').multilevelpushmenu('expand');
+        } else {
+            $('#menu').multilevelpushmenu('collapse');
+        }
+    });
+
+    $('html').click(function (event) {
+        //check up the tree of the click target to check whether user has clicked outside of menu
+        if ($(event.target).parents('#menu').length == 0) {
+            // your code to hide menu
+            //this event listener has done its job so we can unbind it.
+            $('#menu').multilevelpushmenu('collapse');
+            // $(this).unbind(event);
+        }
+    })
+
+</script>
+<script>
+
+    $('.disableSelection').mousedown(function(e){
+        if (e.which == 3) {
+            $(this)[0].oncontextmenu = function() {
+                return false;
+            }
+        }
+        return false;
+    });
+</script>
+</body>
+
+</html>

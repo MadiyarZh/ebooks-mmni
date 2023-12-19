@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kk-KZ">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/popup/css/style.css"/>
+    <link rel="stylesheet" href="../../assets/test/css/style.css"/>
+</head>
+<body>
+<div id="tests">
+
+</div>
+
+<div id="result">
+    <span class="button b-close"><span>X</span></span>
+    <h2>Нәтиже:</h2>
+</div>
+
+<div id="result-popup">
+    Нәтиже
+</div>
+
+<script src="../../assets/jq/jquery-1.11.3.min.js"></script>
+<script src="../../assets/test/js/test.js"></script>
+<script src="../../assets/popup/js/jquery.bpopup.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var tests = [
+                    {title:'sdsdfsdf',optionA:'sdfsdfsdf',optionB:'sdfsdfsdf',optionC:'sdfsdfsdf',optionD:'sdfsdfsdf',optionE:'sdfsdfsdf'},
+                    {title:'sdssdf234dfsdf',optionA:'sdf234sdfsdf',optionB:'s234dfsdfsdf',optionC:'sdfsdfsdf',optionD:'sdfsdfsdf',optionE:'sdfsdfsdf'},
+                    {title:'sdssdf234dfsdf',optionA:'sdf234sdfsdf',optionB:'s234dfsdfsdf',optionC:'sdfsdfsdf',optionD:'sdfsdfsdf',optionE:'sdfsdfsdf'},
+                    {title:'sdssdf234dfsdf',optionA:'sdf234sdfsdf',optionB:'s234dfsdfsdf',optionC:'sdfsdfsdf',optionD:'sdfsdfsdf',optionE:'sdfsdfsdf'}
+                ],
+            answers = {'q1':'A','q2':'C'};
+
+        testing(tests,answers);
+    });
+</script>
+
+</body>
+</html>

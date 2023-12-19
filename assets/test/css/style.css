@@ -1,0 +1,14 @@
+.questions ul{
+     list-style-type: upper-alpha;
+     padding-left: 24px;
+ }
+
+#tests .item{
+    border-bottom: 1px #CCC solid;
+    margin-bottom: 16px;
+}
+
+.questions ul li.option input[type=radio]{
+    vertical-align: top;
+    margin: 4px;
+}
